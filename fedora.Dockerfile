@@ -4,7 +4,7 @@ WORKDIR /src/mixxx
 
 # Install dependencies
 COPY mixxx/tools/rpm_buildenv.sh tools/rpm_buildenv.sh
-RUN source tools/rpm_buildenv.sh setup
+RUN tools/rpm_buildenv.sh setup
 
 COPY mixxx .
 
